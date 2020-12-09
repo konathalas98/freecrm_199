@@ -14,8 +14,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 	
 		features = "Feature"
-		,glue={"stepDefinition"}
-		,tags={"@LoginTest"},
+		,glue={"stepDefinition"},
+		//tags={"@LoginTest"},
 		plugin = {"json:target/cucumber.json"}
 		//,monochrome=true //to display clear output on console in readable format
 		//,dryRun=true //checks the mapping between feature file and stepDef file
