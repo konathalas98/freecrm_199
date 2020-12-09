@@ -1,17 +1,14 @@
 package stepDefinition;
 
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
-import java.util.Properties;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-
-import com.gargoylesoftware.css.dom.Property;
 
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -44,8 +41,8 @@ public class FreeCRMSteps {
 		System.setProperty("webdriver.chrome.driver", driverPath);
 
 		driver = new ChromeDriver(); //Launch chrome
-       
-        
+
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		driver.get("https://freecrm.co.in/"); //Open the FreeCRM website
@@ -71,7 +68,7 @@ public class FreeCRMSteps {
 
 	@When("^User enters valid UserName and Password$")
 	public void user_enters_valid_UserName_and_Password() throws Exception{ 
-	
+
 		objLogin.setUserName("raghuvindhyala18@gmail.com"); //calls the method Enters username in the Username field
 		Thread.sleep(1000);
 		objLogin.setPassword("Raghu@0224"); //calls the method which Enters the password
