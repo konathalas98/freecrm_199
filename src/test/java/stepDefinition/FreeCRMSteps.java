@@ -21,7 +21,7 @@ import pageObjects.LoginPage;
 import pageObjects.TaskPage;
 
 public class FreeCRMSteps {
-	String driverPath = "C:\\selenium_jar\\chromedriver.exe";  //Chromedriver path
+	String driverPath = "C:\\drivers\\chromedriver.exe";  //Chromedriver path
 	WebDriver driver;
 
 	LoginPage objLogin;
@@ -110,8 +110,8 @@ public class FreeCRMSteps {
 	@Given("^User is on Home page$")
 	public void user_is_on_Home_page() throws Exception {
 		objLogin.clickfirstLogin(); //click on login button before filling credentials
-		objLogin.setUserName("raghuvindhyala18@gmail.com"); //calls method that enter username
-		objLogin.setPassword("Raghu@0224"); //calls method that enter password
+		objLogin.setUserName("konathalasaranya199@gmail.com"); //calls method that enter username
+		objLogin.setPassword("Saranya123@"); //calls method that enter password
 		objLogin.clickLogin(); //click on login button after filling credentials
 		Thread.sleep(1000);
 		String title1=driver.getTitle(); //gets title of home page
