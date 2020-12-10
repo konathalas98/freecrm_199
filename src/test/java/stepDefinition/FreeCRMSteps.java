@@ -110,7 +110,7 @@ public class FreeCRMSteps {
 	@Given("^User is on Home page$")
 	public void user_is_on_Home_page() throws Exception {
 		objLogin.clickfirstLogin(); //click on login button before filling credentials
-		objLogin.setUserName("konathalasaranya199@gmail.com"); //calls method that enter username
+		objLogin.setUserName("konathalasaranya1998@gmail.com"); //calls method that enter username
 		objLogin.setPassword("Saranya123@"); //calls method that enter password
 		objLogin.clickLogin(); //click on login button after filling credentials
 		Thread.sleep(1000);
@@ -201,7 +201,7 @@ public class FreeCRMSteps {
 	@When("^user clicks on Tasks$")
 	public void user_clicks_on_Tasks() throws Throwable {
 		objTaskPage.Tasks_button(); //calls the method which clicks on tasks button
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	}
 
 	@When("^user navigated to Tasks page$")
@@ -248,4 +248,4 @@ public class FreeCRMSteps {
 	}
 
 
-}
+}  
