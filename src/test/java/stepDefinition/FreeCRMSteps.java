@@ -69,9 +69,9 @@ public class FreeCRMSteps {
 	@When("^User enters valid UserName and Password$")
 	public void user_enters_valid_UserName_and_Password() throws Exception{ 
 
-		objLogin.setUserName("raghuvindhyala18@gmail.com"); //calls the method Enters username in the Username field
+		objLogin.setUserName("konathalasaranya1998@gmail.com"); //calls the method Enters username in the Username field
 		Thread.sleep(1000);
-		objLogin.setPassword("Raghu@0224"); //calls the method which Enters the password
+		objLogin.setPassword("Saranya123@"); //calls the method which Enters the password
 		Thread.sleep(1000);
 
 	}
@@ -142,14 +142,14 @@ public class FreeCRMSteps {
 
 	@Then("^User is able to create a new contact on filling the FirstName and LastName fields$")
 	public void user_is_able_to_create_a_new_contact_on_filling_the_FirstName_and_LastName_fields() throws Throwable {
-		objContactsPage.Contacts_formFill("Raghu", "veer", "V", "capgemini"); //calls the method which fill the form
+		objContactsPage.Contacts_formFill("konathala", "saranya", "V", "capgemini"); //calls the method which fill the form
 		driver.quit();//quits the browser
 
 	}
 
 	@Then("^User leaves the FirstName field empty and clicks on save$")
 	public void user_leaves_the_FirstName_field_empty_and_clicks_on_save() throws Throwable {
-		objContactsPage.Contacts_formFill("", "veer", "V", "capgemini"); //calls the method which fill the form with first name empty
+		objContactsPage.Contacts_formFill("", "saranya", "V", "capgemini"); //calls the method which fill the form with first name empty
 	}
 
 	@Then("^Display an firstname alert Message$")
@@ -160,7 +160,7 @@ public class FreeCRMSteps {
 	}
 	@Then("^User leaves the LastName field empty and clicks on save$")
 	public void user_leaves_the_LastName_field_empty_and_clicks_on_save() throws Throwable {
-		objContactsPage.Contacts_formFill("Raghu", "", "V", "capgemini"); //calls the method which fill the form with last name empty
+		objContactsPage.Contacts_formFill("konathala", "", "V", "capgemini"); //calls the method which fill the form with last name empty
 	}
 	@Then("^Display an lastname alert Message$")
 	public void display_an_lastname_alert_Message() throws Throwable {
